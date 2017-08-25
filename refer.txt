@@ -1,0 +1,2 @@
+https://github.com/vansante/go-ffprobe.git
+https://github.com/xdave/ff.git
