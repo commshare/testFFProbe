@@ -1,0 +1,716 @@
+root@ubuntu:/home/zhangbin/ffmpeg/RECORD_TEST/go-ffprobe/ffmpeg-release-64bit-static.tar/ffmpeg-3.3.3-64bit-static# ./ffprobe -v trace -show_format -show_streams http://live10034.bs2dl.yy.com/crs_612dc769e21e411383ed30136aa52363.ts
+ffprobe version 3.3.3-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2007-2017 the FFmpeg developers
+  built with gcc 6.4.0 (Debian 6.4.0-2) 20170724
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc-6 --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gray --enable-libass --enable-libfreetype --enable-libfribidi --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+[NULL @ 0x3f0d860] Opening 'http://live10034.bs2dl.yy.com/crs_612dc769e21e411383ed30136aa52363.ts' for reading
+[http @ 0x3f0e000] Setting default whitelist 'http,https,tls,rtp,tcp,udp,crypto,httpproxy'
+[http @ 0x3f0e000] request: GET /crs_612dc769e21e411383ed30136aa52363.ts HTTP/1.1
+User-Agent: Lavf/57.71.100
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: live10034.bs2dl.yy.com
+Icy-MetaData: 1
+
+
+[http @ 0x3f0e000] header='HTTP/1.1 206 Partial Content'
+[http @ 0x3f0e000] http_code=206
+[http @ 0x3f0e000] header='Server: openresty/1.11.2.2'
+[http @ 0x3f0e000] header='Date: Fri, 25 Aug 2017 06:37:38 GMT'
+[http @ 0x3f0e000] header='Content-Type: video/MP2T'
+[http @ 0x3f0e000] header='Content-Length: 17866580'
+[http @ 0x3f0e000] header='Connection: close'
+[http @ 0x3f0e000] header='Last-Modified: Mon, 21 Aug 2017 06:57:43 GMT'
+[http @ 0x3f0e000] header='Etag: "25c5835b5efca614ca9b36da590842e4f5f895c9"'
+[http @ 0x3f0e000] header='Expires: Tue, 22 Aug 2017 07:14:00 GMT'
+[http @ 0x3f0e000] header='Cache-Control: max-age=86400'
+[http @ 0x3f0e000] header='Age: 10665'
+[http @ 0x3f0e000] header='Content-Range: bytes 0-17866579/17866580'
+[http @ 0x3f0e000] header=''
+Probing mp3 score:1 size:2048
+Probing mpeg score:25 size:2048
+Probing mpegts score:50 size:2048
+[mpegts @ 0x3f0d860] Format mpegts probed with size=2048 and score=50
+score: 44, dvhs_score: -1, fec_score: -3 
+[http @ 0x3f0e000] request: GET /crs_612dc769e21e411383ed30136aa52363.ts HTTP/1.1
+User-Agent: Lavf/57.71.100
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: live10034.bs2dl.yy.com
+Icy-MetaData: 1
+
+
+[http @ 0x3f0e000] header='HTTP/1.1 206 Partial Content'
+[http @ 0x3f0e000] http_code=206
+[http @ 0x3f0e000] header='Server: openresty/1.11.2.2'
+[http @ 0x3f0e000] header='Date: Fri, 25 Aug 2017 06:37:38 GMT'
+[http @ 0x3f0e000] header='Content-Type: video/MP2T'
+[http @ 0x3f0e000] header='Content-Length: 17866580'
+[http @ 0x3f0e000] header='Connection: close'
+[http @ 0x3f0e000] header='Last-Modified: Mon, 21 Aug 2017 06:57:43 GMT'
+[http @ 0x3f0e000] header='Etag: "25c5835b5efca614ca9b36da590842e4f5f895c9"'
+[http @ 0x3f0e000] header='Expires: Fri, 25 Aug 2017 02:18:11 GMT'
+[http @ 0x3f0e000] header='Cache-Control: max-age=86400'
+[http @ 0x3f0e000] header='Age: 11064'
+[http @ 0x3f0e000] header='Content-Range: bytes 0-17866579/17866580'
+[http @ 0x3f0e000] header=''
+[mpegts @ 0x3f0d860] Filter: pid=0x11 type=1
+[mpegts @ 0x3f0d860] Filter: pid=0x0 type=1
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] tag: 0x48 len=18
+[mpegts @ 0x3f0d860] new_program: id=0x0001
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] sid=0x1 pid=0x1000
+[mpegts @ 0x3f0d860] new_program: id=0x0001
+[mpegts @ 0x3f0d860] Filter: pid=0x1000 type=1
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] sid=0x1 sec_num=0/0 version=0 tid=2
+[mpegts @ 0x3f0d860] pcr_pid=0x101
+[mpegts @ 0x3f0d860] Filter: pid=0x100 type=0
+[mpegts @ 0x3f0d860] stream=0 stream_type=f pid=100 prog_reg_desc=
+[mpegts @ 0x3f0d860] Filter: pid=0x101 type=0
+[mpegts @ 0x3f0d860] stream=1 stream_type=1b pid=101 prog_reg_desc=
+[mpegts @ 0x3f0d860] tuning done
+[mpegts @ 0x3f0d860] Before avformat_find_stream_info() pos: 0 bytes read:11378 seeks:1 nb_streams:2
+[mpegts @ 0x3f0d860] Skipping after seek
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] tag: 0x48 len=18
+[mpegts @ 0x3f0d860] new_program: id=0x0001
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] sid=0x1 pid=0x1000
+[mpegts @ 0x3f0d860] new_program: id=0x0001
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] sid=0x1 sec_num=0/0 version=0 tid=2
+[mpegts @ 0x3f0d860] pcr_pid=0x101
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 7 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 39 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 39 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 38 times
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 25 times
+[mpegts @ 0x3f0d860] max_analyze_duration 7000000 reached at 7011433 microseconds st:0
+[mpegts @ 0x3f0d860] start time for stream 1 is not set in estimate_timings_from_pts
+[http @ 0x3f0e000] request: GET /crs_612dc769e21e411383ed30136aa52363.ts HTTP/1.1
+User-Agent: Lavf/57.71.100
+Accept: */*
+Range: bytes=17616580-
+Connection: close
+Host: live10034.bs2dl.yy.com
+Icy-MetaData: 1
+
+
+[http @ 0x3f0e000] header='HTTP/1.1 206 Partial Content'
+[http @ 0x3f0e000] http_code=206
+[http @ 0x3f0e000] header='Server: openresty/1.11.2.2'
+[http @ 0x3f0e000] header='Date: Fri, 25 Aug 2017 06:37:38 GMT'
+[http @ 0x3f0e000] header='Content-Type: video/MP2T'
+[http @ 0x3f0e000] header='Content-Length: 250000'
+[http @ 0x3f0e000] header='Connection: close'
+[http @ 0x3f0e000] header='Last-Modified: Mon, 21 Aug 2017 06:57:43 GMT'
+[http @ 0x3f0e000] header='Etag: "25c5835b5efca614ca9b36da590842e4f5f895c9"'
+[http @ 0x3f0e000] header='Expires: Tue, 22 Aug 2017 07:37:22 GMT'
+[http @ 0x3f0e000] header='Cache-Control: max-age=86400'
+[http @ 0x3f0e000] header='Age: 9726'
+[http @ 0x3f0e000] header='Content-Range: bytes 17616580-17866579/17866580'
+[http @ 0x3f0e000] header=''
+[mpegts @ 0x3f0d860] Skipping after seek
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] sid=0x1 sec_num=0/0 version=0 tid=2
+[mpegts @ 0x3f0d860] pcr_pid=0x101
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] Continuity check failed for pid 257 expected 1 got 0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] Continuity check failed for pid 256 expected 7 got 0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 2 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] Continuity check failed for pid 17 expected 3 got 0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] Continuity check failed for pid 257 expected 2 got 0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] Continuity check failed for pid 256 expected 7 got 0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 2 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[http @ 0x3f0e000] request: GET /crs_612dc769e21e411383ed30136aa52363.ts HTTP/1.1
+User-Agent: Lavf/57.71.100
+Accept: */*
+Range: bytes=17366580-
+Connection: close
+Host: live10034.bs2dl.yy.com
+Icy-MetaData: 1
+
+
+[http @ 0x3f0e000] header='HTTP/1.1 206 Partial Content'
+[http @ 0x3f0e000] http_code=206
+[http @ 0x3f0e000] header='Server: openresty/1.11.2.2'
+[http @ 0x3f0e000] header='Date: Fri, 25 Aug 2017 06:37:38 GMT'
+[http @ 0x3f0e000] header='Content-Type: video/MP2T'
+[http @ 0x3f0e000] header='Content-Length: 500000'
+[http @ 0x3f0e000] header='Connection: close'
+[http @ 0x3f0e000] header='Last-Modified: Mon, 21 Aug 2017 06:57:43 GMT'
+[http @ 0x3f0e000] header='Etag: "25c5835b5efca614ca9b36da590842e4f5f895c9"'
+[http @ 0x3f0e000] header='Expires: Sat, 26 Aug 2017 04:56:22 GMT'
+[http @ 0x3f0e000] header='Cache-Control: max-age=86400'
+[http @ 0x3f0e000] header='Age: 6076'
+[http @ 0x3f0e000] header='Content-Range: bytes 17366580-17866579/17866580'
+[http @ 0x3f0e000] header=''
+[mpegts @ 0x3f0d860] Skipping after seek
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] sid=0x1 sec_num=0/0 version=0 tid=2
+[mpegts @ 0x3f0d860] pcr_pid=0x101
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 2 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] Continuity check failed for pid 257 expected 15 got 0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] Continuity check failed for pid 256 expected 8 got 0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 2 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] Continuity check failed for pid 17 expected 3 got 0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] Continuity check failed for pid 257 expected 15 got 0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] Continuity check failed for pid 256 expected 7 got 0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 1 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+    Last message repeated 2 times
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] Continuity check failed for pid 17 expected 3 got 0
+[mpegts @ 0x3f0d860] SDT:
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] Continuity check failed for pid 257 expected 1 got 0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] PAT:
+[mpegts @ 0x3f0d860] PMT: len 26
+[mpegts @ 0x3f0d860] Continuity check failed for pid 256 expected 7 got 0
+[mpegts @ 0x3f0d860] pid=100 pes_code=0x1c0
+[mpegts @ 0x3f0d860] pid=101 pes_code=0x1e0
+[mpegts @ 0x3f0d860] stream 1 : no TS found at start of file, duration not set ц╩спур╣╫
+[http @ 0x3f0e000] request: GET /crs_612dc769e21e411383ed30136aa52363.ts HTTP/1.1
+User-Agent: Lavf/57.71.100
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: live10034.bs2dl.yy.com
+Icy-MetaData: 1
+
+
+[http @ 0x3f0e000] header='HTTP/1.1 206 Partial Content'
+[http @ 0x3f0e000] http_code=206
+[http @ 0x3f0e000] header='Server: openresty/1.11.2.2'
+[http @ 0x3f0e000] header='Date: Fri, 25 Aug 2017 06:37:38 GMT'
+[http @ 0x3f0e000] header='Content-Type: video/MP2T'
+[http @ 0x3f0e000] header='Content-Length: 17866580'
+[http @ 0x3f0e000] header='Connection: close'
+[http @ 0x3f0e000] header='Last-Modified: Mon, 21 Aug 2017 06:57:43 GMT'
+[http @ 0x3f0e000] header='Etag: "25c5835b5efca614ca9b36da590842e4f5f895c9"'
+[http @ 0x3f0e000] header='Expires: Tue, 22 Aug 2017 07:14:00 GMT'
+[http @ 0x3f0e000] header='Cache-Control: max-age=86400'
+[http @ 0x3f0e000] header='Age: 10665'
+[http @ 0x3f0e000] header='Content-Range: bytes 0-17866579/17866580'
+[http @ 0x3f0e000] header=''
+[mpegts @ 0x3f0d860] stream 0: start_time: 42350.541 duration: 186.258
+[mpegts @ 0x3f0d860] stream 1: start_time: 42350.541 duration: 186.258
+[mpegts @ 0x3f0d860] format: start_time: 42350.541 duration: 186.258 bitrate=767 kb/s
+[mpegts @ 0x3f0d860] Could not find codec parameters for stream 1 (Video: h264, 1 reference frame ([27][0][0][0] / 0x001B), none(left)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+[mpegts @ 0x3f0d860] After avformat_find_stream_info() pos: 0 bytes read:611742 seeks:4 frames:153
+Input #0, mpegts, from 'http://live10034.bs2dl.yy.com/crs_612dc769e21e411383ed30136aa52363.ts':
+  Duration: 00:03:06.26, start: 42350.540867, bitrate: 767 kb/s
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+    Stream #0:0[0x100], 153, 1/90000: Audio: aac (HE-AACv2) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 23 kb/s
+    Stream #0:1[0x101], 0, 1/90000: Video: h264, 1 reference frame ([27][0][0][0] / 0x001B), none(left), 90k tbr, 90k tbn, 180k tbc
+[STREAM]
+index=0
+codec_name=aac
+codec_long_name=AAC (Advanced Audio Coding)
+profile=HE-AACv2
+codec_type=audio
+codec_time_base=1/44100
+codec_tag_string=[15][0][0][0]
+codec_tag=0x000f
+sample_fmt=fltp
+sample_rate=44100
+channels=2
+channel_layout=stereo
+bits_per_sample=0
+id=0x100
+r_frame_rate=0/0
+avg_frame_rate=0/0
+time_base=1/90000
+start_pts=3811548678
+start_time=42350.540867
+duration_ts=16763259
+duration=186.258433
+bit_rate=23944
+max_bit_rate=N/A
+bits_per_raw_sample=N/A
+nb_frames=N/A
+nb_read_frames=N/A
+nb_read_packets=N/A
+DISPOSITION:default=0
+DISPOSITION:dub=0
+DISPOSITION:original=0
+DISPOSITION:comment=0
+DISPOSITION:lyrics=0
+DISPOSITION:karaoke=0
+DISPOSITION:forced=0
+DISPOSITION:hearing_impaired=0
+DISPOSITION:visual_impaired=0
+DISPOSITION:clean_effects=0
+DISPOSITION:attached_pic=0
+DISPOSITION:timed_thumbnails=0
+[/STREAM]
+[STREAM]
+index=1
+codec_name=h264
+codec_long_name=H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+profile=unknown
+codec_type=video
+codec_time_base=0/2
+codec_tag_string=[27][0][0][0]
+codec_tag=0x001b
+width=0
+height=0
+coded_width=0
+coded_height=0
+has_b_frames=0
+sample_aspect_ratio=0:1
+display_aspect_ratio=0:0
+pix_fmt=unknown
+level=-99
+color_range=N/A
+color_space=unknown
+color_transfer=unknown
+color_primaries=unknown
+chroma_location=left
+field_order=unknown
+timecode=N/A
+refs=1
+is_avc=false
+nal_length_size=0
+id=0x101
+r_frame_rate=180000/2
+avg_frame_rate=0/0
+time_base=1/90000
+start_pts=3811548678
+start_time=42350.540867
+duration_ts=16763259
+duration=186.258433
+bit_rate=N/A
+max_bit_rate=N/A
+bits_per_raw_sample=N/A
+nb_frames=N/A
+nb_read_frames=N/A
+nb_read_packets=N/A
+DISPOSITION:default=0
+DISPOSITION:dub=0
+DISPOSITION:original=0
+DISPOSITION:comment=0
+DISPOSITION:lyrics=0
+DISPOSITION:karaoke=0
+DISPOSITION:forced=0
+DISPOSITION:hearing_impaired=0
+DISPOSITION:visual_impaired=0
+DISPOSITION:clean_effects=0
+DISPOSITION:attached_pic=0
+DISPOSITION:timed_thumbnails=0
+[/STREAM]
+[FORMAT]
+filename=http://live10034.bs2dl.yy.com/crs_612dc769e21e411383ed30136aa52363.ts
+nb_streams=2
+nb_programs=1
+format_name=mpegts
+format_long_name=MPEG-TS (MPEG-2 Transport Stream)
+start_time=42350.540867
+duration=186.258433
+size=17866580
+bit_rate=767388
+probe_score=50
+[/FORMAT]
+[AVIOContext @ 0x3f1b040] Statistics: 611742 bytes read, 4 seeks
+root@ubuntu:/home/zhangbin/ffmpeg/RECORD_TEST/go-ffprobe/ffmpeg-release-64bit-static.tar/ffmpeg-3.3.3-64bit-static# 
